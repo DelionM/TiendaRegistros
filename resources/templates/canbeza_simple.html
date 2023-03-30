@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="../public/index.php">
+                    <div class="icono">
+                        <i class="fa-solid fa-house"></i>
+                         <span>D3L10N</span>
+                     </div>
+                </a>
+            </div>
+            <div class="nav-responsive menu-toggle" id="menu-toggle" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+        </header>
+    </div>
+    <style>
+        .contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+/*Logo o equipo*/
+.contenedor-header header .logo a{
+    font-family:'Righteous'; 
+    font-size: 25px;
+    color: rgb(85, 164, 178);
+    text-decoration: none;
+}
+
+.contenedor-header header .logo a:hover{
+    color: #ceec0c;
+}
+
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.contenedor-header header nav ul li a{
+    text-align: center;
+    font-family: 'Righteous';
+    color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.contenedor-header header nav ul li a:hover{
+    color: #07e7ef;
+    
+    border-radius: 15px;
+}
+
+.nav.responsive{
+    background-color: aqua;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.contenedor-header i{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+    </style>
+</body> 
+
+
+
+
